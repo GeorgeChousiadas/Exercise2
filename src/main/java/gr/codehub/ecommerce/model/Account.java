@@ -13,13 +13,15 @@ import lombok.NoArgsConstructor;
  *
  */
 public class Account {
+
     //fields of the class Account
     private String owner;
     private double balance;
     private int numberOfTransactions;
 
-    /*
-    //empty constructor
+
+/*
+    //constructor
     public Account(){
     }
 
@@ -30,13 +32,14 @@ public class Account {
         this.numberOfTransactions = numberOfTransactions;
     }
 */
+
     //withdraw method
-    public double withdraw(double withdrawAmount){
+    public void withdraw(double withdrawAmount){
         this.numberOfTransactions++;
         if(withdrawAmount>0) {
             if (this.balance - withdrawAmount > 0) {
                 this.balance -= withdrawAmount;
-                return balance;
+
             }else{
                 System.out.println("Error, Insufficient Funds!!!");
             }
@@ -44,20 +47,18 @@ public class Account {
         else{
             System.out.println("Error");
         }
-
-        return -1;
     }
 
 
     //deposit method
-    public double deposit(double depositAmount) {
+    public void deposit(double depositAmount) {
         this.numberOfTransactions++;
         if (depositAmount>0) {
             this.balance += depositAmount;
-            return balance;
         }
-        System.out.println("Error!");
-        return -1;
+        else{
+            System.out.println("Error!");
+        }
     }
 
 

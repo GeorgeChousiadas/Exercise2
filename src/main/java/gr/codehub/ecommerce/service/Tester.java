@@ -2,6 +2,7 @@ package gr.codehub.ecommerce.service;
 
 import java.util.Scanner;
 import gr.codehub.ecommerce.model.Account;
+import gr.codehub.ecommerce.model.StoreAccount;
 
 /**
  *
@@ -50,11 +51,12 @@ public class Tester {
         System.out.println("Owner:" +acc2.getOwner()+ " || Euros:" +acc2.getBalance() + " || Trans:" + acc2.getNumberOfTransactions());
         System.out.println(" ");
 
-        acc.withdraw( acc1.getBalance() );
-        System.out.println("Owner:" +acc.getOwner()+ " || Euros:" +acc.getBalance() + " || Trans:" + acc.getNumberOfTransactions());
-        System.out.println("Owner:" +acc1.getOwner()+ " || Euros:" +acc1.getBalance() + " || Trans:" + acc1.getNumberOfTransactions());
-        System.out.println("Owner:" +acc2.getOwner()+ " || Euros:" +acc2.getBalance() + " || Trans:" + acc2.getNumberOfTransactions());
-        System.out.println(" ");
+
+        StoreAccount storeacc = new StoreAccount();
+
+
+
+
 
     }
 
