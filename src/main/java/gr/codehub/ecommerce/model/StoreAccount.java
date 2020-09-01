@@ -37,13 +37,8 @@ public class StoreAccount extends Account{
 
 
 
-    public void changeCategory(){
-        String basic;
-        String mid;
-        String extra;
-        String premium;
-
-
+    public void changeCategory(String category){
+        this.accountCategory = category;
     }
 
 

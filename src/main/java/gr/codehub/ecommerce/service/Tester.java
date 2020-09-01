@@ -97,8 +97,12 @@ public class Tester {
                 ", Owner:" +storeacc1.getOwner()+ " , Euros:" +storeacc1.getBalance() +
                 " , Number of Trans:" +storeacc1.getNumberOfTransactions()+ " , Account Category:" +storeacc1.getAccountCategory());
 
+        storeacc1.changeCategory("prime");
 
 
+        System.out.println("Store name:" +storeacc1.getStoreName()+
+                ", Owner:" +storeacc1.getOwner()+ " , Euros:" +storeacc1.getBalance() +
+                " , Number of Trans:" +storeacc1.getNumberOfTransactions()+ " , Account Category:" +storeacc1.getAccountCategory());
 
     }
 
