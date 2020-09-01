@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 
 /**
- * This is a account for stores. This subclass inherits from
+ * This is an account for stores. This subclass inherits from
  * Account class it's 3 fields and it's methods (withdraw/deposit)
  * also, but also has 2 new fields and 1 new method
  */
