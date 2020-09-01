@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 
 
 /**
- *
+ * This is an account for people
  */
 public class Account {
 
@@ -42,10 +42,12 @@ public class Account {
 
             }else{
                 System.out.println("Error, Insufficient Funds!!!");
+                System.out.println("");
             }
         }
         else{
             System.out.println("Error");
+            System.out.println("");
         }
     }
 
@@ -58,6 +60,7 @@ public class Account {
         }
         else{
             System.out.println("Error!");
+            System.out.println("");
         }
     }
 
