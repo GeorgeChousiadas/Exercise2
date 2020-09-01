@@ -8,9 +8,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-
 /**
  * This is an account for people
+ * They can withdraw main from their accounts
+ * or the can deposit money in their accounts
+ * So there are two methods: withdraw/deposit
  */
 public class Account {
 
@@ -18,20 +20,6 @@ public class Account {
     private String owner;
     private double balance;
     private int numberOfTransactions;
-
-
-/*
-    //constructor
-    public Account(){
-    }
-
-    //constructor for the fields
-    public Account(String owner, double balance, int numberOfTransactions) {
-        this.owner = owner;
-        this.balance = balance;
-        this.numberOfTransactions = numberOfTransactions;
-    }
-*/
 
     //withdraw method
     public void withdraw(double withdrawAmount){
@@ -51,7 +39,6 @@ public class Account {
         }
     }
 
-
     //deposit method
     public void deposit(double depositAmount) {
         this.numberOfTransactions++;
@@ -63,9 +50,4 @@ public class Account {
             System.out.println("");
         }
     }
-
-
-
-
-
 }

@@ -5,7 +5,10 @@ import gr.codehub.ecommerce.model.Account;
 import gr.codehub.ecommerce.model.StoreAccount;
 
 /**
- *
+ * Tester is the class in which i have implemented testerMethod.
+ * This method tests all the methods of the parent class Account
+ * (withdraw/deposit) and the one and only method of the child class
+ * StoreAccount  (changeCategory)
  */
 public class Tester {
 
@@ -98,7 +101,7 @@ public class Tester {
                 " , Number of Trans:" +storeacc1.getNumberOfTransactions()+ " , Account Category:" +storeacc1.getAccountCategory());
 
         storeacc1.changeCategory("prime");
-
+        storeacc1.changeCategory("premium");
 
         System.out.println("Store name:" +storeacc1.getStoreName()+
                 ", Owner:" +storeacc1.getOwner()+ " , Euros:" +storeacc1.getBalance() +
