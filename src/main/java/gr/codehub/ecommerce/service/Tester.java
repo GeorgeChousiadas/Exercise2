@@ -40,7 +40,7 @@ public class Tester {
         acc2.setBalance(500.00);
         acc2.setNumberOfTransactions(2);
 
-
+/*
         System.out.println("Owner:" +acc.getOwner()+ " , Euros:" +acc.getBalance() + " , Trans:" + acc.getNumberOfTransactions());
         System.out.println("Owner:" +acc1.getOwner()+ " , Euros:" +acc1.getBalance() + " , Trans:" + acc1.getNumberOfTransactions());
         System.out.println("Owner:" +acc2.getOwner()+ " , Euros:" +acc2.getBalance() + " , Trans:" + acc2.getNumberOfTransactions());
@@ -106,7 +106,8 @@ public class Tester {
         System.out.println("Store name:" +storeacc1.getStoreName()+
                 ", Owner:" +storeacc1.getOwner()+ " , Euros:" +storeacc1.getBalance() +
                 " , Number of Trans:" +storeacc1.getNumberOfTransactions()+ " , Account Category:" +storeacc1.getAccountCategory());
+*/
+
 
     }
-
 }
