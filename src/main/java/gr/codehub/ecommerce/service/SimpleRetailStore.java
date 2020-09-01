@@ -22,7 +22,17 @@ public class SimpleRetailStore implements IStore {
 
     @Override
     public double getRevenue() {
-        double revenue = totalSellBalance - totalBuyBalance;
-        return revenue;
+        return totalSellBalance - totalBuyBalance;
     }
+
+    ////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////
+    @Override
+    public void getInventory(){
+    }
+
+    @Override
+    public void reset(){
+    }
+
 }

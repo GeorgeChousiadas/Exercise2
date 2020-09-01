@@ -11,5 +11,8 @@ public interface IStore {
     void sell(Product product);
     double getRevenue();
 
+    void getInventory();
+    void reset();
+
 
 }

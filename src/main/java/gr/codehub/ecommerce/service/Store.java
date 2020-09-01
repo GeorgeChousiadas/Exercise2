@@ -25,6 +25,20 @@ public class Store implements IStore{
         products.remove(product);
     }
 
+ /////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    @Override
+    public void getInventory(){
+        for (Product product : products) {
+            System.out.println("ID: " + product.getId() + " Artist: " + product.getName() + " Buy Price: "
+                    + product.getPriceWhenBuy() + " Sell Price: " + product.getPriceWhenSell());
+        }
+    }
+
+    @Override
+    public void reset() {
+        products.removeAll(products);
+        }
 
 
 
