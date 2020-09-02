@@ -2,13 +2,17 @@ package gr.codehub.ecommerce.service;
 
 import gr.codehub.ecommerce.model.Product;
 
+import java.util.ArrayList;
+
 /**
- *
+ * SimpleRetailStore implements the interface and
+ * now the bodies of the methods provided
+ * This Store do not keep an inventory
  */
 public class SimpleRetailStore implements IStore {
 
-    private double  totalBuyBalance;
-    private  double totalSellBalance;
+    private double  totalBuyBalance; //total balance of the paints when by
+    private  double totalSellBalance;//total balance of the paints when sell
 
     @Override
     public void buy(Product product) {
@@ -25,8 +29,7 @@ public class SimpleRetailStore implements IStore {
         return totalSellBalance - totalBuyBalance;
     }
 
-    ////////////////////////////////////////////////////////////////////////////
-    /////////////////////////////////////////////////////////////////////////////
+
     @Override
     public void getInventory(){
     }
