@@ -29,11 +29,12 @@ public class SimpleRetailStore implements IStore {
         return totalSellBalance - totalBuyBalance;
     }
 
-
+    //empty method which implemented in InventoryRetailStore
     @Override
     public void getInventory(){
     }
 
+    //empty method which implemented in InventoryRetailStore
     @Override
     public void reset(){
     }

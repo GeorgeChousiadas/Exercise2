@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /**
  * InventoryRetailStore create an ArrayList
- * with the name product to keep the inventory
+ * with the name product to keep an inventory
  */
 public class InventoryRetailStore implements IStore{
 

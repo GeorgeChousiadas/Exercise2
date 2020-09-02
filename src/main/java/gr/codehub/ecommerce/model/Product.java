@@ -3,7 +3,7 @@ package gr.codehub.ecommerce.model;
 /**
  * Plain Old Java Object (POJO) class Product
  * No lombok use, constructors, setters &
- * getters by default
+ * getters by hand
  */
 public class Product {
     private int id;
